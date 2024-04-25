@@ -41,88 +41,76 @@
     font-size: 1.2rem;
 }
 
-// .graphs-section {
-//  ADD THIS BACK IN WHEN YOU HAVE THE GRAPHS SECTION
-// }
-
 .graphs-section {
-    display: flex;          /* Establishes a flex container */
-    justify-content: space-between; /* Distributes space between and around content items */
-    align-items: center;    /* Vertically centers the items in the line */
-    margin-left: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    //padding: 0 8rem; /* Adds 8rem of padding on left and right */
   }
 
-//   .graphs-section > div {
-//     flex: 1;                /* Makes each div take up equal space */
-//     padding: 10px;          /* Adds some space around each image */
-//     box-sizing: border-box; /* Ensures padding is included in width/height */
-//   }
 
-.graphs-section .image1,
-.graphs-section .image2,
-.graphs-section .image3 {
-  padding: 0;  /* Removes any padding and standardizes the containers */
-}
-  
   .graphs-section img {
-    
-    width: 70%;            /* Makes images responsive to the size of their container */
-    height: auto;           /* Maintains the aspect ratio */
+    width: 70%;
+    height: auto;
   }
-
-  .graphs-section .image2 p {
-     
-      margin-top: 3rem;
-  }
-
-  .graphs-section .image2 p {
-    white-space: nowrap;  /* Prevents the text from wrapping to the next line */
-    overflow: hidden;     /* Keeps the text within the bounds of the element */
-    text-overflow: ellipsis; /* Adds an ellipsis if the text is too long */
-  }
-
-  .graphs-section .image1 p {
-    margin-top: 2rem;
-  }
-
-  .graphs-section .image3 {
-    margin-left: 8rem;  /* Adds left margin specifically to the third image */
-  }
-
-
+  
   .graphs-section div {
-    display: flex;            /* Uses flexbox to lay out children */
-    flex-direction: column;   /* Stacks children vertically */
-    align-items: center;      /* Centers children horizontally within the container */
-    text-align: center;       /* Ensures text itself is centered */
-    margin-bottom: 0;      /* Adds some space below each image container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0;
   }
+  
+  .graphs-section p {
+    margin-top: 8px;
+    color: #333;
+    font-size: 16px;
+  }
+
+
+  .graphs-section .image2 p {
+  margin-top: 3rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.graphs-section .image3 {
+    width: 35%;
+}
+
+
 
   .graphs-section p {
     margin-top: 8px; /* Adds a little space between the image and the text */
     color: #333;    /* Sets the text color */
-    font-size: 16px; /* Sets the size of the font */
+    font-size: 20px; /* Sets the size of the font */
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  
+  .view-more-data-btn-container {
+    display: flex;
+    justify-content: center;
+    margin-left: 5%;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .view-more-data-btn-container button {
+    margin: 0 10px;
+    margin-top: 3rem;
   }
   
 
-.view-more-data-btn-container {
-    height: 44px;
-    width: 100%;  /* Adjust the width to take the full container width */
-    margin-top: 8rem;
-    margin-bottom: 10%;
-    display: flex;
-    justify-content: center; /* Center the buttons horizontally */
-    //align-items: center; /* Center the buttons vertically (if needed) */
-}
-
-.view-more-data-btn-container button {
-     margin-top: 0;
-}    
 .middle-section {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 7rem;
 }
+
+
 
 .hrf-img {
     height: 339px;
@@ -160,7 +148,7 @@
   }
   
   .stat-box h2 {
-    margin-bottom: 10px; /* Space between the h2 and the paragraph */
+    margin-bottom: 30px; /* Space between the h2 and the paragraph */
   }
   
   .stat-box p {

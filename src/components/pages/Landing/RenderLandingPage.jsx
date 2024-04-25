@@ -35,48 +35,20 @@ function RenderLandingPage(props) {
       <div className="graphs-section">
         <div className="image1">
           <img src={GrantRatesByOfficeImg} alt="Search Grant Rates By Office" />
-          <p
-            style={{
-              fontWeight: 'bold',
-              color: 'black',
-              fontSize: '18px',
-              fontFamily: 'Times New Roman, serif',
-              textAlign: 'center',
-            }}
-          >
-            Search Grant Rates By Office
-          </p>
+          <p>Search Grant Rates By Office</p>
         </div>
+
         <div className="image2">
           <img
             src={GrantRatesByNationalityImg}
             alt="Search Grant Rates By Nationality"
           />
-          <p
-            style={{
-              fontWeight: 'bold',
-              color: 'black',
-              fontSize: '18px',
-              fontFamily: 'Times New Roman, serif',
-              textAlign: 'center',
-            }}
-          >
-            Search Grant Rates By Nationality
-          </p>
+          <p>Search Grant Rates By Nationality</p>
         </div>
+
         <div className="image3">
           <img src={GrantRatesOverTimeImg} alt="Search Grant Rates Over Time" />
-          <p
-            style={{
-              fontWeight: 'bold',
-              color: 'black',
-              fontSize: '18px',
-              fontFamily: 'Times New Roman, serif',
-              textAlign: 'auto',
-            }}
-          >
-            Search Grant Rates Over Time
-          </p>
+          <p>Search Grant Rates Over Time</p>
         </div>
       </div>
 
@@ -143,7 +115,6 @@ function RenderLandingPage(props) {
               </h2>
               <p
                 style={{
-                  fontWeight: 'bold',
                   fontSize: '18px',
                   fontFamily: 'Times New Roman, serif',
                 }}
@@ -166,7 +137,6 @@ function RenderLandingPage(props) {
               </h2>
               <p
                 style={{
-                  fontWeight: 'bold',
                   fontSize: '18px',
                   fontFamily: 'Times New Roman, serif',
                 }}
@@ -188,7 +158,6 @@ function RenderLandingPage(props) {
               </h2>
               <p
                 style={{
-                  fontWeight: 'bold',
                   fontSize: '18px',
                   fontFamily: 'Times New Roman, serif',
                 }}
@@ -206,7 +175,8 @@ function RenderLandingPage(props) {
               style={{
                 backgroundColor: '#404C4A',
                 color: '#FFFFFF',
-                marginTop: 80,
+                marginTop: 70,
+                fontWeight: 'bold',
               }}
             >
               Read More
