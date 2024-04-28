@@ -26,7 +26,28 @@ Widely used applications use robust APIs to get data. It is your job to integrat
 Endpoints: 
 
 - Fiscal Year Data: `/fiscalSummary`
+   test_data.json is an array that contains a single object. This fiscalSummary data represents the single object inside the data array.
 - Citizenship Data: `/citizenshipSummary`
+   `CitizenshipSummary` contains data that needs to be stored as the value of key called `citizenshipResults`. We need to inject this key/value 
+   pair into the `fiscalSummary` data.
+         
+[   //We need to create this array
+     {      //This is our fiscalSummary data
+        "granted": 24.373156706704233,
+        "adminClosed": 20.79086550343532,
+        "denied": 54.568072100571726,
+        "closedNacaraGrant": 0.17893332015224162,
+        "asylumTerminated": 0.08897236913647373,
+        "totalCases": 303465,
+        "yearResults": [
+         ...   
+        ],
+        "citizenshipResults": [    //This is our citizenshipSummary 
+            ...
+        ],
+     }
+]
+
 
 If you look at `src/data/text_data.json`, there are 2 JSON blobs(google the definition of JSON blob), 1 for fiscal year data and the other for citizenship data. Study the differences in the structure of the data in `src/data/text_data.json` and the given endpoints thoroughly.  
 
