@@ -1,3 +1,5 @@
+import Auth0ProviderWithHistory from './auth/auth0-provider-with-history';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {
@@ -28,11 +30,13 @@ const { primary_accent_color } = colors;
 const store = configureStore({ reducer: reducer });
 ReactDOM.render(
   <Router>
-    <Provider store={store}>
-      <React.StrictMode>
-        <App />
-      </React.StrictMode>
-    </Provider>
+    <Auth0ProviderWithHistory>
+      <Provider store={store}>
+        <React.StrictMode>
+          <App />
+        </React.StrictMode>
+      </Provider>
+    </Auth0ProviderWithHistory>
   </Router>,
   document.getElementById('root')
 );
